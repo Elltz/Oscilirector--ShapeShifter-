@@ -8,3 +8,8 @@ JavaFX ShapeShifter Node
  In ACTION
   
   <a href='http://postimg.org/image/sxr01ev6l/' target='_blank'><img src='http://s22.postimg.org/sxr01ev6l/oscillirector.jpg' border='0' alt="oscillirector" /></a>
+
+
+# HOW IT WORKS
+
+This simple node uses events from the mouse tracker to change shapes of the Node, it is precisely accurate to use onMouseEntered and onMouseExited to trigger events but rather it uses the onHoverProperty() to enable implementors to trigger their code prior to the changing of the shape.. Whenever new children are added the Node infront of the other children is relocated, initially Oscilirector was suppose to host only one child node and the innter child node will host other children but preference is upon you, but it best fits the UI beauty when it consist of only one child node
